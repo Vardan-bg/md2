@@ -76,6 +76,9 @@ export class Md2Calendar implements AfterContentInit {
   /** Emits when the currently selected date changes. */
   @Output() selectedChange = new EventEmitter<Date>();
 
+  @Input() okLabel: string = 'Ok';
+  @Input() cancelLabel: string = 'Cancel';
+
   /** Date filter for the month and year views. */
   _dateFilterForViews = (date: Date) => {
     return !!date &&
@@ -145,6 +148,24 @@ export class Md2Calendar implements AfterContentInit {
     } else {
       this._currentView = this.startView || 'month';
     }
+  }
+
+
+  // /**
+  //  * Ok Button Event
+  //  */
+  _onClickOk() {
+    if(this._currentView == 'clock')
+      this._timeSelected(this._activeDate);
+    if(this._currentView == 'month')
+      this._dateSelected(this._activeDate);
+    if(this._currentView == 'year')
+      this._monthSelected(this._activeDate);
+  }
+
+  close(){
+    //this._activeDate;
+    this.selectedChange.emit(this.selected);
   }
 
   /** Handles date selection in the month view. */

@@ -1,10 +1,10 @@
 {
-  "name": "angular-md2",
+  "name": "ng-md2",
   "version": "6.1.0",
   "repository": {
-    "url": "https://github.com/liuy97/md2.git"
+    "url": "https://github.com/Vardan-bg/md2.git"
   },
-  "author": "liuy97",
+  "author": "Event_L",
   "license": "MIT",
   "engines": {
     "node": ">=8.0.0",

@@ -215,6 +215,8 @@ md2-datepicker {
 
 .md2-datepicker-actions {
   text-align: right;
+  right: 0px;
+  bottom: 0px;
 
   .md2-button {
     display: inline-block;
@@ -235,4 +237,12 @@ md2-datepicker {
       background: darken(white, 8);
     }
   }
+}
+
+md2-clock {
+  padding: 8px!important;
+  margin: 0px!important;
+}
+.content-md2-top{
+  height: calc(100% - 40px);
 }

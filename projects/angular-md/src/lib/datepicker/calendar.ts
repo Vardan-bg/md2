@@ -171,9 +171,7 @@ export class Md2Calendar implements AfterContentInit {
   /** Handles date selection in the month view. */
   _dateSelected(date: Date): void {
     if (this.type == 'date') {
-      if (!this._util.sameDate(date, this.selected)) {
         this.selectedChange.emit(date);
-      }
     } else {
       this._activeDate = date;
       this._currentView = 'clock';
@@ -183,9 +181,7 @@ export class Md2Calendar implements AfterContentInit {
   /** Handles month selection in the year view. */
   _monthSelected(month: Date): void {
     if (this.type == 'month') {
-      if (!this._util.isSameMonthAndYear(month, this.selected)) {
-        this.selectedChange.emit(this._util.getFirstDateOfMonth(month));
-      }
+      this.selectedChange.emit(this._util.getFirstDateOfMonth(month));
     } else {
       this._activeDate = month;
       this._currentView = 'month';

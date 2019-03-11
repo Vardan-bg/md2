@@ -62,7 +62,7 @@ export class DateLocale {
   dates: Array<string>;
   hours: Array<string>;
   minutes: Array<string>;
-  firstDayOfWeek: number = 0;
+  firstDayOfWeek: number = 1;
 
   getDayOfWeek(date: Date): number {
     return date.getDay();

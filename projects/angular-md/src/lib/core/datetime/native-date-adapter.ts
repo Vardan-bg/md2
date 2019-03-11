@@ -93,7 +93,7 @@ export class NativeDateAdapter extends DateAdapter<Date> {
 
   getFirstDayOfWeek(): number {
     // We can't tell using native JS Date what the first day of the week is, we default to Sunday.
-    return 0;
+    return 1;
   }
 
   getNumDaysInMonth(date: Date): number {

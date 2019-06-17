@@ -1,6 +1,8 @@
 {
-  "name": "md2",
-  "version": "6.0.2",
+  "name": "ng-md2",
+  "version": "9.0.0",
+  "author": "Event_L",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

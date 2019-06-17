@@ -1,13 +1,13 @@
 {
   "name": "ng-md2",
   "np": {
-        "yarn": false,
-        "contents": "dist/angular-md",
-        "yolo": true,
-        "cleanup": false,
-        "publish": true
-    },
-  "version": "6.1.9",
+    "yarn": false,
+    "contents": "dist/angular-md",
+    "yolo": true,
+    "cleanup": false,
+    "publish": true
+  },
+  "version": "8.0.0",
   "repository": {
     "url": "https://github.com/Vardan-bg/md2.git"
   },

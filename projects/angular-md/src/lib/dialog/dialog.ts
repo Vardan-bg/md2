@@ -105,7 +105,7 @@ export class Md2Dialog implements OnDestroy {
   @Output() onClose: EventEmitter<Md2Dialog> = new EventEmitter<Md2Dialog>();
 
   /** The portal to send the dialog content through */
-  @ViewChild(Md2DialogPortal) _portal: Md2DialogPortal;
+  @ViewChild(Md2DialogPortal, {static: true}) _portal: Md2DialogPortal;
 
   @Input('title') dialogTitle: string;
 

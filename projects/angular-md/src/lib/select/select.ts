@@ -220,10 +220,10 @@ export class Md2Select implements AfterContentInit, OnDestroy, OnInit, ControlVa
   ];
 
   /** Trigger that opens the select. */
-  @ViewChild('trigger') trigger: ElementRef;
+  @ViewChild('trigger', {static: true}) trigger: ElementRef;
 
   /** Overlay pane containing the options. */
-  @ViewChild(ConnectedOverlayDirective) overlayDir: ConnectedOverlayDirective;
+  @ViewChild(ConnectedOverlayDirective, {static: true}) overlayDir: ConnectedOverlayDirective;
 
   /** All of the defined select options. */
   @ContentChildren(Md2Option, { descendants: true }) options: QueryList<Md2Option>;

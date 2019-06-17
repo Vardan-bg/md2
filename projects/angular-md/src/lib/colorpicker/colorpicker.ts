@@ -294,7 +294,7 @@ export class Md2Colorpicker implements OnDestroy, ControlValueAccessor {
   /** Event emitted when the select has been closed. */
   @Output() onClose: EventEmitter<void> = new EventEmitter<void>();
 
-  @ViewChild('portal') _templatePortal: TemplateRef<any>;
+  @ViewChild('portal', {static: true}) _templatePortal: TemplateRef<any>;
 
   constructor(private _element: ElementRef, private _overlay: Overlay,
     private _viewContainerRef: ViewContainerRef, private _renderer: Renderer,

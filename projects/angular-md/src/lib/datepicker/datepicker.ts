@@ -70,7 +70,7 @@ let datepickerUid = 0;
 export class Md2DatepickerContent {
   datepicker: Md2Datepicker;
 
-  @ViewChild(Md2Calendar) _calendar: Md2Calendar;
+  @ViewChild(Md2Calendar, {static: true}) _calendar: Md2Calendar;
 
   /**
    * Handles keydown event on datepicker content.

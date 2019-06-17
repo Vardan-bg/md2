@@ -97,7 +97,7 @@ export class Md2Chips implements ControlValueAccessor, AfterContentInit {
   @Input('item-value') valueKey: string = null;
 
   @Output() change: EventEmitter<any> = new EventEmitter<any>();
-  @ViewChild('chipInputForm') chipInputForm: NgForm;
+  @ViewChild('chipInputForm', {static: true}) chipInputForm: NgForm;
 
   _onChange: (value: any) => void = () => { };
   _onTouched = () => { };

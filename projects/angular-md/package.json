@@ -7,13 +7,13 @@
   "author": "Event_L",
   "license": "MIT",
   "engines": {
-    "node": ">=8.0.0",
-    "npm": ">=3.10.3"
+    "node": ">=11.0.0",
+    "npm": ">=6.8.0"
   },
   "peerDependencies": {
-    "@angular/common": ">=6.0.0",
-    "@angular/core": ">=6.0.0",
-    "@angular/forms": ">=6.0.0",
-    "rxjs": "^6.2.0"
+    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=8.0.0",
+    "@angular/forms": ">=8.0.0",
+    "rxjs": ">= 6.0.0 < 7"
   }
 }

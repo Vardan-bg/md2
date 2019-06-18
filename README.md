@@ -1,6 +1,6 @@
 # Md2
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Vardan-bg/md2/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/ng-md2.svg)](https://badge.fury.io/js/ng-md2)
 [![Build Status](https://travis-ci.org/Vardan-bg/md2.svg?branch=master)](https://travis-ci.org/Vardan-bg/md2)
 [![Angular Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)

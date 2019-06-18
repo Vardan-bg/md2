@@ -5,6 +5,8 @@
 
 This project releases Promact md2 compatible with rxjs 6 and angular 6.
 
+Updated to angular 8
+
 #### Quick links
 [StackBlitz Template](https://stackblitz.com/edit/angular-md2)
 
